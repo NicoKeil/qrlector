@@ -27,7 +27,7 @@ qrcode.callback = res => {
 
 btnScanQR.onclick = () => {
   navigator.mediaDevices
-    .getUserMedia({ video: { facingMode: "environment" } })
+    .getUserMedia({ video: { facingMode: "environment", width: 1250, height: 750 } })
     .then(function(stream) {
       scanning = true;
       qrResult.hidden = true;
